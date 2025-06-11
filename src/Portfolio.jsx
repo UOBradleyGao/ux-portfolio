@@ -81,26 +81,27 @@ export default function Portfolio() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Service Site",
-                image: "https://www.hostgator.com/blog/wp-content/uploads/2019/04/Create-a-Services-Page-for-Your-Website.png",
-              },
-              {
-                title: "Small Game",
-                image: "https://thereader.mitpress.mit.edu/wp-content/uploads/2020/11/pacman-lead-graphic.jpg",
-              },
-              {
-                title: "E-commerce Site",
-                image: "https://www.cloudways.com/blog/wp-content/uploads/ecommerce-website-checklist-b-.jpg",
-              },
-              {
-                title: "Analytics Site",
-                image: "https://t4.ftcdn.net/jpg/04/35/31/47/360_F_435314769_TXsKQ6aQfoHMZJfGcXtaXhyoY7iHK3ld.jpg",
-              },
-            ].map(({ title, image }, index) => (
+          {[
+            {
+              title: "Tattoo Services Site",
+              image: "https://blog.spoongraphics.co.uk/wp-content/uploads/2011/09/Untitled-1.jpg",
+              link: "https://seg3125-a2.netlify.app",
+            },
+            {
+              title: "Small Game",
+              image: "https://thereader.mitpress.mit.edu/wp-content/uploads/2020/11/pacman-lead-graphic.jpg",
+            },
+            {
+              title: "E-commerce Site",
+              image: "https://www.cloudways.com/blog/wp-content/uploads/ecommerce-website-checklist-b-.jpg",
+            },
+            {
+              title: "Analytics Site",
+              image: "https://t4.ftcdn.net/jpg/04/35/31/47/360_F_435314769_TXsKQ6aQfoHMZJfGcXtaXhyoY7iHK3ld.jpg",
+            },
+          ].map(({ title, image, link }, index) => {
+            const content = (
               <div
-                key={index}
                 className="bg-gradient-to-tr from-white to-blue-50 border border-blue-100 rounded-xl p-6 text-center shadow-md transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl"
               >
                 <h3 className="font-semibold text-xl text-blue-700 mb-2">
@@ -113,7 +114,22 @@ export default function Portfolio() {
                 />
                 <p className="text-gray-600">Coming Soon</p>
               </div>
-            ))}
+            );
+
+            return link ? (
+              <a
+                key={index}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                {content}
+              </a>
+            ) : (
+              <div key={index}>{content}</div>
+            );
+          })}
           </div>
         </section>
 
