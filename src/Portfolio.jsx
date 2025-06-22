@@ -88,8 +88,9 @@ export default function Portfolio() {
               link: "https://seg3125-a2.netlify.app",
             },
             {
-              title: "Small Game",
+              title: "Path Quest Game",
               image: "https://thereader.mitpress.mit.edu/wp-content/uploads/2020/11/pacman-lead-graphic.jpg",
+              link: "https://vermillion-gumdrop-f262e4.netlify.app/",
             },
             {
               title: "E-commerce Site",
