@@ -84,7 +84,7 @@ export default function Portfolio() {
           {[
             {
               title: "Tattoo Services Site",
-              image: "https://blog.spoongraphics.co.uk/wp-content/uploads/2011/09/Untitled-1.jpg",
+              image: "https://media.istockphoto.com/id/1138077558/vector/tattoo-studio-interior-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=lOsrTJ2tfUXaCnFHnZjNZgNIi_65b0I_bwUreIYmSiU=",
               link: "https://seg3125-a2.netlify.app",
             },
             {
@@ -93,8 +93,9 @@ export default function Portfolio() {
               link: "https://vermillion-gumdrop-f262e4.netlify.app/",
             },
             {
-              title: "E-commerce Site",
-              image: "https://www.cloudways.com/blog/wp-content/uploads/ecommerce-website-checklist-b-.jpg",
+              title: "E-commerce Clothing Site",
+              image: "https://img.freepik.com/free-vector/fashionable-clothes-boutique-background-with-woman-fashion-symbols-flat-vector-illustration_1284-77657.jpg?semt=ais_hybrid&w=740",
+              link: "https://seg3125-a4.netlify.app/",
             },
             {
               title: "Analytics Site",
